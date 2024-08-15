@@ -26,7 +26,7 @@ const AdminLeftbar = () => {
 
   const handleLogout = async () => {
     try {
-      await axios.delete('http://localhost:8080/api/v1/auth/logout', {
+      await axios.delete('http://34.234.35.144/api/v1/auth/logout', {
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`, // Adjust token retrieval as needed
         },
