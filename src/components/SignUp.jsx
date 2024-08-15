@@ -44,7 +44,7 @@ const SignUp = () => {
         };
 
         try {
-            const response = await axios.post('http://localhost:8080/api/v1/auth/register', data);
+            const response = await axios.post('http://34.234.35.144:8080/api/v1/auth/register', data);
             toast.success('Registration successful!');
             console.log('Registration Response:', response.data);
             navigate('/login'); 
